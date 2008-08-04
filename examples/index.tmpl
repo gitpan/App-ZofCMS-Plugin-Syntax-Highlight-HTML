@@ -1,0 +1,11 @@
+{
+    body        => \'index.tmpl',
+    highlight_before => 'BEFORE_FOOS',
+    highlight_after => 'AFTER_FOOS',
+        highlight_html => {
+            foohtml => '<div class="bar">beer</div>',
+            barhtml     => sub { return '<div class="bar">beer</div>' },
+            beerhtml    => \ 'index.tmpl',
+        },
+        plugins     => [  qw/Syntax::Highlight::HTML/ ],
+}

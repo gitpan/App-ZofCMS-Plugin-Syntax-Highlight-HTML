@@ -1,0 +1,23 @@
+---
+name: App-ZofCMS-Plugin-Syntax-Highlight-HTML
+version: 0.0101
+author:
+  - 'Zoffix Znet <zoffix@cpan.org>'
+abstract: provide HTML code snippets on your site
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  App::ZofCMS: 0.0103
+  File::Spec: 3.2701
+  Syntax::Highlight::HTML: 0.04
+build_requires:
+  Test::More: 0
+provides:
+  App::ZofCMS::Plugin::Syntax::Highlight::HTML:
+    file: lib/App/ZofCMS/Plugin/Syntax/Highlight/HTML.pm
+    version: 0.0101
+generated_by: Module::Build version 0.2808
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
