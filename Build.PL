@@ -14,7 +14,9 @@ my $builder = Module::Build->new(
         'Syntax::Highlight::HTML' => 0.04,
         'File::Spec'              => 3.2701,
         'App::ZofCMS'             => 0.0103,
+        'perl' => '5.006',
     },
+    configure_requires => { 'Module::Build' => 0 },
     add_to_cleanup      => [ 'App-ZofCMS-Plugin-Syntax-Highlight-HTML-*' ],
     create_makefile_pl => 'traditional',
 );
